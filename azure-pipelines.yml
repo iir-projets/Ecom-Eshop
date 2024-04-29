@@ -1,4 +1,10 @@
 # Maven
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    appType: 'webApp'
+    WebAppName: 
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
@@ -20,3 +26,57 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: Xcode@5
+  inputs:
+    actions: 'build'
+    packageApp: false
+    - task: VSTest@3
+      inputs:
+        testSelector: 'testAssemblies'
+        testAssemblyVer2: |
+          **\*test*.dll
+          !**\*TestAdapter.dll
+          !**\obj\**
+        searchFolder: '$(System.DefaultWorkingDirectory)'
+        - task: AzureCLI@2
+          inputs:
+            scriptLocation: 'scriptPath'
+            scriptPath: 
+            - task: InvokeRESTAPI@1
+              inputs:
+                connectionType: 'connectedServiceName'
+                method: 'POST'
+                waitForCompletion: 'false'
+                - task: Docker@2
+                  inputs:
+                    command: 'buildAndPush'
+                    Dockerfile: '**/Dockerfile'
+                    - task: DockerInstaller@0
+                      inputs:
+                        dockerVersion: '17.09.0-ce'
+                        - task: VisualStudioTestPlatformInstaller@1
+                          inputs:
+                            packageFeedSelector: 'nugetOrg'
+                            versionSelector: 'latestPreRelease'
+                            - task: Xcode@5
+                              inputs:
+                                actions: 'build'
+                                packageApp: false
+                                - task: CmdLine@2
+                                  inputs:
+                                    script: |
+                                      echo Write your commands here
+                                      
+                                      echo Hello world
+                                      - task: DeployVisualStudioTestAgent@1
+                                        inputs:
+                                          testMachineGroup: 
+                                          winRmProtocol: 'Https'
+                                          - task: AzureFileCopy@6
+                                            inputs:
+                                              Destination: 
+                                              - task: AzureSpringCloud@0
+                                                inputs:
+                                                  Action: 'Deploy'
+                                                  AppName: 
+                                                  UseStagingDeployment: true
