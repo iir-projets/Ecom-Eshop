@@ -1,0 +1,16 @@
+/* styles.css */
+.btn.btn-warning {
+  background-color: pink;
+  color: white; /* pour assurer la lisibilité du texte sur le fond rose */
+  /* Autres styles selon vos préférences */
+}
+.container h1{
+  font-size: 50px; /* Ajustez selon votre besoin */
+  margin-bottom: 70px; /* Ajustez selon votre besoin */
+  right: 1000px;
+  font-family: 'Crete Round', serif;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #a68dad;
+}

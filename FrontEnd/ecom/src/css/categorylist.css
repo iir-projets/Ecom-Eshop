@@ -1,0 +1,93 @@
+.category-container {
+  background-color: creamybrown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+}
+.category-container h1{
+  font-size: 50px; /* Ajustez selon votre besoin */
+  margin-bottom: 70px; /* Ajustez selon votre besoin */
+  right: 1000px;
+  font-family: 'Crete Round', serif;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #a68dad;
+}
+.category-container h2{
+font-size: 30px; /* Ajustez selon votre besoin */
+line-height: 1.5; /* Ajustez selon votre besoin */
+font-family: 'Zen Antique Soft', serif;
+text-align: center;
+font-style: italic;
+margin-bottom: 100px;
+color: #8d97ad;
+}
+
+.category-list {
+  display: flex;
+  overflow-x: auto;
+}
+
+.category-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.category-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.category-actions {
+  margin-top: 15px;
+}
+
+.category-actions .btn {
+  margin-right: 10px;
+}
+
+/* .scroll-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+.category-scroll {
+  display: flex;
+  align-items: center;
+}
+
+.scroll-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  color: #d86c8c;
+}
+
+.scroll-button:hover {
+  color: #777;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+

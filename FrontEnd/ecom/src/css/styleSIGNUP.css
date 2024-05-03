@@ -1,0 +1,42 @@
+.vh-100 {
+  background: linear-gradient(to bottom, #F8BBD0, #FFFFFF);
+  background: -webkit-linear-gradient(top, #F8BBD0, #FFFFFF); /* Utilisation du préfixe -webkit- pour une compatibilité maximale avec les navigateurs */
+}
+.container.h-100 {
+  max-width: 80%; /* Vous pouvez ajuster cette valeur selon vos besoins */
+  margin: auto; /* Pour centrer la div horizontalement */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding: 20px;
+}
+.btn-primary {
+  background: linear-gradient(to bottom, #F8BBD0, #FFFFFF);
+  
+}
+.text-center.h1.fw-bold.mb-5.mx-1.mx-md-4.mt-4{
+  font-family: 'Crete Round', serif;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #a68dad;
+}
+.lol{
+  font-family: 'Crete Round', serif;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #a68dad; 
+  margin-left: 300px;
+  font-size: 50px;
+  /* margin-bottom: 50px; */
+}
+.h-100{
+  margin-bottom: 100px;
+}
+.form-label{
+  font-family: 'Zen Antique Soft', serif;
+  color: #F8BBD0;
+  font-style: italic;
+}
+
+

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.334e921c.css",
+    "main.js": "/static/js/main.8ab51a87.js",
+    "static/media/vid.mp4": "/static/media/vid.76a305b7a5e1897aded8.mp4",
+    "static/media/avatar3.png": "/static/media/avatar3.fd4b2e983f3c9e0aaaf7.png",
+    "static/media/avatare.png": "/static/media/avatare.b19544e77d308e49efb7.png",
+    "static/media/avatar.png": "/static/media/avatar.d0ef75d47824f16ede74.png",
+    "static/media/hi.png": "/static/media/hi.675eb33ae4f22899fecc.png",
+    "static/media/model1.png": "/static/media/model1.ddef48156b7d12131164.png",
+    "static/media/cat.png": "/static/media/cat.4f7225481b7fc37f4e5a.png",
+    "static/media/set2.png": "/static/media/set2.ea184b14507e16823767.png",
+    "static/media/set3.png": "/static/media/set3.d32ac736faa9f1d04b20.png",
+    "static/media/avatar1.png": "/static/media/avatar1.5396211e00f59539c68d.png",
+    "static/media/avatar2.png": "/static/media/avatar2.c62882a1ab8cd7b3d2db.png",
+    "static/media/logo.png": "/static/media/logo.0d158c3c0e8a47a5607b.png",
+    "static/media/setmakeup.png": "/static/media/setmakeup.9fad7735695add2b573e.png",
+    "index.html": "/index.html",
+    "main.334e921c.css.map": "/static/css/main.334e921c.css.map",
+    "main.8ab51a87.js.map": "/static/js/main.8ab51a87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.334e921c.css",
+    "static/js/main.8ab51a87.js"
+  ]
+}
