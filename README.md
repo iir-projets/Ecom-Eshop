@@ -45,7 +45,27 @@ Le frontend est développé en utilisant React.js. L'architecture proposée suit
 
 Le dossier "util" dans le frontend contient le fichier "auth.js" pour la gestion de l'authentification côté client.
 
+## Instructions pour exécuter le projet
 
+### Exécuter le backend :
+
+Pour démarrer le backend, suivez ces étapes :
+
+1. Ouvrez votre IDE Java préféré.
+2. Importez le projet backend.
+3. Assurez-vous que toutes les dépendances sont installées.
+4. Recherchez le fichier principal de l'application (habituellement `Main.java` ou quelque chose de similaire).
+5. Cliquez avec le bouton droit sur le fichier et sélectionnez "Run as Java Application" (ou équivalent).
+
+### Exécuter le frontend :
+
+Pour démarrer le frontend, suivez ces étapes :
+
+1. Assurez-vous d'avoir Node.js installé sur votre système.
+2. Ouvrez une ligne de commande dans le répertoire du projet frontend.
+3. Exécutez la commande `npm install` pour installer toutes les dépendances.
+4. Une fois l'installation terminée, exécutez la commande `npm start` pour démarrer le serveur de développement.
+5. Le frontend devrait maintenant être accessible dans votre navigateur à l'adresse `http://localhost:8080`.
 
 ### Reference Documentation
 For further reference, please consider the following sections:
